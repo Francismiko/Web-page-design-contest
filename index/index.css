@@ -1,0 +1,195 @@
+/* 去除网页原来边距 */
+body {
+  margin: 0px;
+  font-size: 0px;
+}
+
+.center {
+  display: grid;
+  /*网格布局*/
+  place-items: center;
+  /*水平及垂直居中的简写*/
+}
+
+@media screen and (min-width:481px) {
+
+  /*桌面浏览器所显示的网页CSS*/
+  /* 导航栏容器样式 */
+  .navigationContainer {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 6vh;
+    /* vh = view height */
+    /* 视高 */
+    width: 100vw;
+    /* vw = view width */
+    /* 视宽 */
+  }
+
+  /* 头部容器样式 */
+  .headContainer {
+    display: inline-block;
+    background-color: rgb(255, 26, 26);
+    height: 25vh;
+    width: 100vw;
+  }
+
+  /* 检索表容器样式 */
+  .indexContainer {
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 100vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    /* 内边距 */
+  }
+
+  /* 左侧大容器 */
+  .leftContainer {
+    display: inline-block;
+    background-color: rgb(255, 223, 182);
+    height: 100vh;
+    width: 60vw;
+    margin-left: 5vw;
+  }
+
+  /* 左侧轮播图盒子 */
+  .leftCarouselImgBox {
+    background-color: rgb(197, 228, 255);
+    /* 16:9 */
+    width: 56vw;
+    height: 31.5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  /* 右侧大容器 */
+  .rightContainer {
+    display: inline-block;
+    background-color: rgb(255, 223, 182);
+    height: 100vh;
+    width: 27vw;
+    margin-left: 3vw;
+    margin-right: auto;
+  }
+
+  .indexContainer>div {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  /* 宫格布局 */
+  .indexGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0vw;
+    justify-content: center;
+  }
+
+  .indexGrid>div {
+    font-size: 1.5rem;
+  }
+
+  .indexGrid>div:hover {
+    text-decoration: underline;
+    color: rgb(255, 67, 67);
+  }
+}
+
+
+
+@media screen and (max-width:480px) {
+
+  /*手机端浏览器所显示的网页CSS*/
+  .navigationContainer {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    height: 4vh;
+    /* vh = view height */
+    /* 视高 */
+    width: 100vw;
+    /* vw = view width */
+    /* 视宽 */
+  }
+
+  /* 头部容器样式 */
+  .headContainer {
+    display: inline-block;
+    background-color: red;
+    height: 25vh;
+    width: 100vw;
+  }
+
+  /* 检索表容器样式 */
+  .indexContainer {
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 100vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    /* 内边距 */
+  }
+
+  /* 左侧大容器 */
+  .leftContainer {
+    display: inline-block;
+    background-color: rgb(255, 223, 182);
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0vw;
+  }
+
+  /* 左侧轮播图盒子 */
+  .leftCarouselImgBox {
+    background-color: rgb(197, 228, 255);
+    /* 16:9 */
+    width: 100vw;
+    height: 56.25vw;
+  }
+
+  /* 右侧大容器 */
+  .rightContainer {
+    display: inline-block;
+    background-color: rgb(255, 204, 137);
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+
+  .indexContainer>div {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  /* 宫格布局 */
+  .indexGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0vw;
+    justify-content: center;
+  }
+
+  .indexGrid>div {
+    font-size: 0.8rem;
+  }
+
+  .indexGrid>div:hover {
+    text-decoration: underline;
+    color: rgb(255, 67, 67);
+  }
+}
