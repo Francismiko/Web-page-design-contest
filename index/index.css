@@ -18,12 +18,36 @@ body {
   .navigationContainer {
     display: inline-block;
     background-color: rgb(255, 255, 255);
-    height: 6vh;
-    /* vh = view height */
-    /* 视高 */
+    height: 7vh;
     width: 100vw;
-    /* vw = view width */
-    /* 视宽 */
+  }
+
+  .navigationContainer button:nth-child(1) {
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .navigationContainer button:nth-child(2) {
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .navigationContainer button:nth-child(3) {
+    width: auto;
+    height: 5vh;
+    float: right;
+    font-size: 1.2rem;
+    margin-right: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 
   /* 头部容器样式 */
@@ -112,12 +136,30 @@ body {
   .navigationContainer {
     display: inline-block;
     background-color: rgb(255, 255, 255);
-    height: 4vh;
+    height: 6vh;
     /* vh = view height */
     /* 视高 */
     width: 100vw;
     /* vw = view width */
     /* 视宽 */
+  }
+
+  .navigationContainer button:nth-child(1) {
+    width: auto;
+    height: 4vh;
+    font-size: 0.6rem;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .navigationContainer button:nth-child(2) {
+    width: auto;
+    height: 4vh;
+    font-size: 0.6rem;
+    margin-left: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 
   /* 头部容器样式 */
