@@ -48,6 +48,15 @@ body {
     /* 内边距 */
   }
 
+  .indexContainer>div {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
   /* 左侧大容器 */
   .leftContainer {
     display: inline-block;
@@ -75,15 +84,6 @@ body {
     width: 27vw;
     margin-left: 3vw;
     margin-right: auto;
-  }
-
-  .indexContainer>div {
-    background-color: antiquewhite;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
   }
 
   /* 宫格布局 */
