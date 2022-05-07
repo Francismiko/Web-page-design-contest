@@ -25,4 +25,9 @@ window.onload = function () {
     window.open("../pages/page5/page5.html")
     console.log("用户点击了'测试例'跳转链接")
   }
+  var toLogin = document.getElementById("toLogin")
+  toLogin.onclick = function () {
+    location.href = "../login/login.html"
+    console.log("用户点击了'登录注册按钮")
+  }
 }
