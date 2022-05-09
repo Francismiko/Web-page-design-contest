@@ -9,8 +9,25 @@
 body {
   font-family: Arial;
   background-color: #ffffff;
-  padding: 50px;
   padding-top: 18vh;
+}
+
+.background-image {
+  width: 96vw;
+  height: 80vh;
+  position: absolute;
+  z-index: -3;
+  background: url(../image/背景素材.jpg);
+  background-size: 96vw 80vh;
+}
+
+.gaussianBlur {
+  backdrop-filter: blur(3px);
+  z-index: -1;
+  width: 96vw;
+  height: 80vh;
+  position: fixed;
+  background-size: 100vw 80vh;
 }
 
 .login {
@@ -19,15 +36,15 @@ body {
 }
 
 .login-screen {
-  background-color: #FFF;
+  background-color: rgba(218, 218, 218, 0.758);
   border: 1.5px solid;
   padding: 20px;
-  border-radius: 8px
+  border-radius: 8px;
 }
 
 .app-title {
   text-align: center;
-  color: #777;
+  color: rgb(83, 83, 83);
 }
 
 .login-form {
