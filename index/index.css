@@ -29,6 +29,19 @@ body {
     margin-left: 5vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: rgb(224, 49, 49);
+    border-color: #fdf200;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+
+  .navigationContainer button:nth-child(1):hover {
+    background-color: rgb(255, 248, 230);
+    border-color: #b0b0b0;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    transform: scale(1.1);
   }
 
   .navigationContainer button:nth-child(2) {
@@ -38,6 +51,19 @@ body {
     margin-left: 3vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: rgb(224, 49, 49);
+    border-color: #fdf200;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+
+  .navigationContainer button:nth-child(2):hover {
+    background-color: rgb(255, 248, 230);
+    border-color: #b0b0b0;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    transform: scale(1.1);
   }
 
   .navigationContainer button:nth-child(3) {
@@ -48,6 +74,19 @@ body {
     margin-right: 3vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: rgb(224, 49, 49);
+    border-color: #fdf200;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+
+  .navigationContainer button:nth-child(3):hover {
+    background-color: rgb(202, 244, 255);
+    border-color: #b0b0b0;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    transform: scale(1.2);
   }
 
   /* 头部容器样式 */
@@ -69,16 +108,17 @@ body {
     background-color: rgb(255, 255, 255);
     height: auto;
     width: 100vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    padding-top: 2vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 0vh;
     padding-bottom: 3vh;
     /* 内边距 */
   }
 
   .indexContainer>div {
-    background-color: antiquewhite;
-    border-radius: 10px;
+    background-color: #d6050b;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     width: 100%;
     height: 100%;
     padding-top: 2vh;
@@ -124,11 +164,14 @@ body {
 
   .indexGrid>div {
     font-size: 1.5rem;
+    transition: 0.4s;
+    color: white;
   }
 
   .indexGrid>div:hover {
     text-decoration: underline;
-    color: rgb(255, 67, 67);
+    transition: 0.2s;
+    transform: scale(1.2);
   }
 }
 
