@@ -14,7 +14,7 @@ window.onload = function () {
     textBool = !textBool
     if (textBool) {
       Text.style.fontSize = 1.75 + "rem"
-      changeText.style.fontSize = 1.6 + "rem"
+      changeText.style.fontSize = 1.5 + "rem"
       jump1.style.fontSize = 2 + "rem"
       jump2.style.fontSize = 2 + "rem"
       jump3.style.fontSize = 2 + "rem"

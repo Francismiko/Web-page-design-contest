@@ -13,11 +13,19 @@ body {
 
 @media screen and (min-width:481px) {
 
+  .background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(../image/背景素材1.jpg);
+  }
+
   /*桌面浏览器所显示的网页CSS*/
   /* 导航栏容器样式 */
   .navigationContainer {
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     min-height: 7vh;
     width: 100vw;
   }
@@ -105,18 +113,18 @@ body {
   .indexContainer {
     display: block;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     height: auto;
     width: 100vw;
     padding-left: 20vw;
     padding-right: 20vw;
     padding-top: 0vh;
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
     /* 内边距 */
   }
 
   .indexContainer>div {
-    background-color: #d6050b;
+    background-color: #d6050cc3;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 100%;
@@ -129,29 +137,49 @@ body {
   .leftContainer {
     display: inline-block;
     position: absolute;
-    background-color: rgb(255, 223, 182);
+    background-color: rgba(255, 223, 182, 0);
     height: 100vh;
-    width: 60vw;
-    margin-left: 5vw;
+    width: 52vw;
+    margin-left: 9vw;
+  }
+
+  /* 小图片盒子 */
+  .imgBox {
+    display: inline-block;
+    box-sizing: border-box;
+    background-size: 20vw 26vh;
+    width: 20vw;
+    height: 26vh;
+    margin-left: 3.1vw;
+    margin-right: 2.6vw;
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    transition: 0.3s;
+  }
+
+  .imgBox:hover {
+    transition: 0.3s;
+    transform: scale(1.15);
   }
 
   /* 左侧轮播图盒子 */
   .leftCarouselImgBox {
     background-color: rgb(197, 228, 255);
     /* 16:9 */
-    width: 60vw;
-    height: 33.75vw;
+    width: 52vw;
+    height: 29.25vw;
   }
 
   /* 右侧大容器 */
   .rightContainer {
     display: block;
     float: right;
-    background-color: rgb(255, 223, 182);
+    background-color: rgba(255, 223, 182, 0.196);
     height: 100vh;
     width: 27vw;
-    margin-left: 3vw;
+    margin-left: 5vw;
     margin-right: 5vw;
+    backdrop-filter: blur(5px);
   }
 
   /* 宫格布局 */
@@ -257,7 +285,6 @@ body {
 
   /* 左侧轮播图盒子 */
   .leftCarouselImgBox {
-    background-color: rgb(197, 228, 255);
     /* 16:9 */
     width: 100vw;
     height: 56.25vw;
