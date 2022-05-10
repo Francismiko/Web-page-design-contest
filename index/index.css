@@ -53,28 +53,6 @@ body {
   }
 
   .navigationContainer button:nth-child(2) {
-    width: 10vw;
-    min-height: 5vh;
-    font-size: 1.2rem;
-    margin-left: 3vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    background-color: rgb(224, 49, 49);
-    border-color: #fdf200;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-  }
-
-  .navigationContainer button:nth-child(2):hover {
-    background-color: rgb(255, 248, 230);
-    border-color: #b0b0b0;
-    color: rgb(0, 0, 0);
-    transition: 0.3s;
-    transform: scale(1.1);
-  }
-
-  .navigationContainer button:nth-child(3) {
     width: auto;
     min-height: 5vh;
     float: right;
@@ -89,7 +67,7 @@ body {
     transition: 0.3s;
   }
 
-  .navigationContainer button:nth-child(3):hover {
+  .navigationContainer button:nth-child(2):hover {
     background-color: rgb(202, 244, 255);
     border-color: #b0b0b0;
     color: rgb(0, 0, 0);
