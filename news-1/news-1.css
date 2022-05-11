@@ -121,6 +121,6 @@ body {
   .textContainer p {
     font-size: 1.2rem;
     line-height: 6vh;
-    transition: 0.3s;
+    transition: 0.03s;
   }
 }
