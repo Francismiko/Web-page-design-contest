@@ -59,6 +59,6 @@ window.onload = function () {
   }
 
   jumpNews1.onclick = function () {
-    location.href = "../news-1/news-1.html"
+    window.open("../news-1/news-1.html")
   }
 }
