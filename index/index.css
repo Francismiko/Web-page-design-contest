@@ -189,6 +189,27 @@ body {
     background-color: #e0b34b;
   }
 
+  .newsTextBox {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .newsTextBox p {
+    font-size: 1.5rem;
+    font-family: 黑体;
+    transition: 0.3s;
+  }
+
+  .newsTextBox p:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
+
   /* 宫格布局 */
   .indexGrid {
     display: grid;

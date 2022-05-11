@@ -8,6 +8,7 @@ window.onload = function () {
   var jump4 = document.getElementById("jump4")
   var jump5 = document.getElementById("jump5")
   var toLogin = document.getElementById("toLogin")
+  var jumpNews1 = document.getElementById("jumpNews1")
   // 改变文本大小
   changeText.onclick = function () {
     textBool = !textBool
@@ -20,6 +21,7 @@ window.onload = function () {
       jump4.style.fontSize = 2 + "rem"
       jump5.style.fontSize = 2 + "rem"
       toLogin.style.fontSize = 2 + "rem"
+      jumpNews1.style.fontSize = 2 + "rem"
     } else {
       changeText.style.fontSize = 1.2 + "rem"
       jumpConveningProcess.style.fontSize = 1.5 + "rem"
@@ -28,6 +30,7 @@ window.onload = function () {
       jump4.style.fontSize = 1.5 + "rem"
       jump5.style.fontSize = 1.5 + "rem"
       toLogin.style.fontSize = 1.2 + "rem"
+      jumpNews1.style.fontSize = 1.5 + "rem"
     }
   }
 
@@ -53,5 +56,9 @@ window.onload = function () {
 
   toLogin.onclick = function () {
     location.href = "../login/login.html"
+  }
+
+  jumpNews1.onclick = function () {
+    location.href = "../news-1/news-1.html"
   }
 }
