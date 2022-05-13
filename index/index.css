@@ -332,56 +332,59 @@ body {
 
 @media screen and (max-width:480px) {
 
-  /*手机端浏览器所显示的网页CSS*/
+  .background-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(../image/背景素材1.jpg);
+  }
+
+  /*桌面浏览器所显示的网页CSS*/
+  /* 导航栏容器样式 */
   .navigationContainer {
     display: inline-block;
-    background-color: rgb(255, 255, 255);
-    height: 6vh;
-    /* vh = view height */
-    /* 视高 */
-    width: 100vw;
-    /* vw = view width */
-    /* 视宽 */
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 7vh;
+    min-width: 100%;
+  }
+
+  .navigationContainer input {
+    display: inline-block;
+    margin-left: 27vw;
+    margin-top: 1vh;
+    min-width: 40vw;
+    min-height: 5vh;
   }
 
   .navigationContainer button:nth-child(1) {
-    width: auto;
-    min-height: 4vh;
-    font-size: 0.6rem;
-    margin-left: 2vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
-
-  .navigationContainer button:nth-child(2) {
-    width: auto;
-    min-height: 4vh;
-    font-size: 0.6rem;
-    margin-left: 3vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    display: none;
   }
 
   .navigationContainer button:nth-child(3) {
     width: auto;
-    min-height: 4vh;
+    min-height: 5vh;
     float: right;
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     margin-right: 3vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: rgb(224, 49, 49);
+    border-color: #fdf200;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
   }
 
   /* 头部容器样式 */
   .headContainer {
     display: inline-block;
-    background-color: red;
     height: auto;
-    width: 100vw;
+    width: 100%;
   }
 
   .headContainer img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -389,64 +392,202 @@ body {
   .indexContainer {
     display: block;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     height: auto;
-    width: 100vw;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    width: 100%;
     /* 内边距 */
+  }
+
+  .indexContainer>div {
+    background-color: #ffc28192;
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
   /* 左侧大容器 */
   .leftContainer {
     display: inline-block;
-    background-color: rgb(255, 223, 182);
-    height: 100vh;
-    width: 100vw;
-    margin-left: 0vw;
+    position: relative;
+    background-color: rgba(255, 223, 182, 0);
+    height: auto;
+    width: 100%;
+  }
+
+  /* 小图片盒子 */
+  .imgBox {
+    display: inline-block;
+    box-sizing: border-box;
+    background-size: 40vw 30vw;
+    min-width: 40vw;
+    min-height: 30vw;
+    margin-left: 5%;
+    margin-right: 2.6%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
   }
 
   /* 左侧轮播图盒子 */
   .leftCarouselImgBox {
+    background-color: rgb(197, 228, 255);
     /* 16:9 */
     width: 100vw;
-    height: 56.25vw;
   }
 
   /* 右侧大容器 */
   .rightContainer {
     display: inline-block;
-    background-color: rgb(255, 204, 137);
-    height: 100vh;
-    width: 100vw;
-    margin-left: 0vw;
-    margin-right: 0vw;
+    background-color: rgba(255, 223, 182, 0.196);
+    min-height: 80vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
   }
 
-  .indexContainer>div {
-    background-color: antiquewhite;
+  .newsHead {
+    display: inline-block;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-left: 2vw;
+  }
+
+  .newsHead p {
+    font-size: 2rem;
+    color: rgb(77, 77, 77);
+    font-family: 宋体;
+  }
+
+  .splitLine {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2px;
+    background-color: #e0b34b;
+  }
+
+  .newsTextBox {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .newsTextBox p {
+    font-size: 1.2rem;
+    font-family: 黑体;
+    transition: 0.3s;
+    line-height: 8vh;
+  }
+
+  .newsTextBox p:hover {
+    text-decoration: underline;
+    color: red;
   }
 
   /* 宫格布局 */
   .indexGrid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 0vw;
     justify-content: center;
   }
 
   .indexGrid>div {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    transition: 0.4s;
+    color: rgb(0, 0, 0);
   }
 
-  .indexGrid>div:hover {
-    text-decoration: underline;
-    color: rgb(255, 67, 67);
+  /* 3D图片廊 */
+  .carouselContainer {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  div#carousel {
+    perspective: 80rem;
+    padding-top: 20%;
+    font-size: 0;
+    margin-bottom: 3rem;
+    overflow: hidden;
+  }
+
+  figure#spinner {
+    transform-style: preserve-3d;
+    height: 20vh;
+    transform-origin: 51% 50% -31.5rem;
+    transition: 1s;
+  }
+
+  figure#spinner img {
+    width: 26vw;
+    max-width: 26vw;
+    position: absolute;
+    left: 40%;
+    transform-origin: 50% 50% -500px;
+    outline: 1px solid transparent;
+  }
+
+  figure#spinner img:nth-child(1) {
+    transform: rotateY(0deg);
+  }
+
+  figure#spinner img:nth-child(2) {
+    transform: rotateY(-40deg);
+  }
+
+  figure#spinner img:nth-child(3) {
+    transform: rotateY(-80deg);
+  }
+
+  figure#spinner img:nth-child(4) {
+    transform: rotateY(-120deg);
+  }
+
+  figure#spinner img:nth-child(5) {
+    transform: rotateY(-160deg);
+  }
+
+  figure#spinner img:nth-child(6) {
+    transform: rotateY(-200deg);
+  }
+
+  figure#spinner img:nth-child(7) {
+    transform: rotateY(-240deg);
+  }
+
+  figure#spinner img:nth-child(8) {
+    transform: rotateY(-280deg);
+  }
+
+  figure#spinner img:nth-child(9) {
+    transform: rotateY(-320deg);
+  }
+
+  div#carousel~span {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    margin-top: -7rem;
+    border-bottom: none;
+    line-height: 0;
+  }
+
+  /* 页脚 */
+  .footContainer {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 12vh;
+    background-color: #f3f3f3ac;
   }
 }
