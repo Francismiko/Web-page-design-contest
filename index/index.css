@@ -132,13 +132,12 @@ body {
   .imgBox {
     display: inline-block;
     box-sizing: border-box;
-    background-size: 22vw 16vw;
-    width: 22vw;
-    height: 16vw;
-    margin-left: 2.6vw;
-    margin-right: 0vw;
-    margin-top: 2vw;
-    margin-bottom: 1vw;
+    background-size: 16vw 12vw;
+    width: 16vw;
+    height: 12vw;
+    margin-left: 5.5vw;
+    margin-right: 2vw;
+    margin-top: 3vw;
     transition: 0.3s;
   }
 
