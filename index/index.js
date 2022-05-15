@@ -29,17 +29,17 @@ window.onload = function () {
       jumpNews4.style.fontSize = 2 + "rem"
       jumpNews5.style.fontSize = 2 + "rem"
     } else {
-      changeText.style.fontSize = 1.2 + "rem"
-      jumpConveningProcess.style.fontSize = 1.5 + "rem"
-      jumpConferenceSignificance.style.fontSize = 1.5 + "rem"
-      jumpRepresentativeFeeling.style.fontSize = 1.5 + "rem"
-      jumpBasesDynamic.style.fontSize = 1.5 + "rem"
-      toLogin.style.fontSize = 1.2 + "rem"
-      jumpNews1.style.fontSize = 1.5 + "rem"
-      jumpNews2.style.fontSize = 1.5 + "rem"
-      jumpNews3.style.fontSize = 1.5 + "rem"
-      jumpNews4.style.fontSize = 1.5 + "rem"
-      jumpNews5.style.fontSize = 1.5 + "rem"
+      changeText.style.fontSize = 1.4 + "vw"
+      jumpConveningProcess.style.fontSize = 1.7 + "vw"
+      jumpConferenceSignificance.style.fontSize = 1.7 + "vw"
+      jumpRepresentativeFeeling.style.fontSize = 1.7 + "vw"
+      jumpBasesDynamic.style.fontSize = 1.7 + "vw"
+      toLogin.style.fontSize = 1.4 + "vw"
+      jumpNews1.style.fontSize = 1.7 + "vw"
+      jumpNews2.style.fontSize = 1.7 + "vw"
+      jumpNews3.style.fontSize = 1.7 + "vw"
+      jumpNews4.style.fontSize = 1.7 + "vw"
+      jumpNews5.style.fontSize = 1.7 + "vw"
     }
   }
 

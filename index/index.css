@@ -40,7 +40,7 @@ body {
   .navigationContainer button:nth-child(1) {
     min-width: 10vw;
     min-height: 5vh;
-    font-size: 1.2rem;
+    font-size: 1.4vw;
     margin-left: 5vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -63,7 +63,7 @@ body {
     width: auto;
     min-height: 5vh;
     float: right;
-    font-size: 1.2rem;
+    font-size: 1.4vw;
     margin-right: 3vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -159,7 +159,7 @@ body {
     display: block;
     float: right;
     background-color: rgba(255, 223, 182, 0.196);
-    height: 117vh;
+    min-height: 60vw;
     width: 27%;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -197,7 +197,7 @@ body {
   }
 
   .newsTextBox p {
-    font-size: 1.5rem;
+    font-size: 1.7vw;
     font-family: 黑体;
     transition: 0.3s;
   }
@@ -218,7 +218,7 @@ body {
   }
 
   .indexGrid>div {
-    font-size: 1.5rem;
+    font-size: 1.7vw;
     transition: 0.4s;
     color: white;
   }
